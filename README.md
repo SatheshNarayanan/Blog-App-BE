@@ -1,2 +1,4 @@
 # Blog-App-BE
-Created with CodeSandbox
+
+Backend application for a Blog Site 
+Find the front end at [Blog](https://blog-sathesh.netlify.app/)
