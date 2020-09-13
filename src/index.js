@@ -5,16 +5,12 @@ const cookieParser = require("cookie-parser");
 const postRouter = require("./routes/postRouter");
 const authorRouter = require("./routes/authorRouter");
 const adminRouter = require("./routes/adminRouter");
-const cors = require("express-cors");
+const cors = require("cors");
 
 const app = express();
 
 app.use(bodyParser.json());
-app.use(
-  cors({
-    allowedOrigins: ["https://blog-sathesh.netlify.app/"]
-  })
-);
+app.use(cors());
 app.use(cookieParser());
 
 app.use("/posts", postRouter);
